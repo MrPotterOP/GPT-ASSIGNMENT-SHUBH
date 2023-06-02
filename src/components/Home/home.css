@@ -1,0 +1,134 @@
+#home {
+    padding: var(--pd-main);
+}
+
+.home-container {
+    row-gap: 165px;
+}
+
+.home-top {
+    text-align: center;
+}
+
+.card {
+    width: 400px;
+    padding: 12px 12px 13px 27px;
+    background-color: var(--clr-gray);
+    border: 1px solid var(--clr-br-green);
+    border-radius: 17px;
+}
+.img-info {
+    width: 14px;
+    margin: 0 0 0 auto;
+}
+.check-box-container {
+    margin: 22px 0 27px 0;
+    justify-content: flex-start;
+    place-items: center;
+    column-gap: 20px;
+    cursor: pointer;
+}
+.check-box-container h2 {
+    color: var(--clr-ft-dark);
+}
+.check-box {
+    width: 44px;
+    height: 44px;
+    border: 3px solid var(--clr-green);
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    transition: background-color .6s ease-in-out;
+}
+.checked {
+    background-color: var(--clr-green);
+}
+.weightage-container {
+    justify-content: flex-start;
+    place-items: center;
+    column-gap: 7px;
+}
+.weightage-container p {
+    font-size: var(--fs-p3);
+    font-weight: var(--fw-bd);
+    color: var(--clr-ft-green);
+}
+.weightage-bar {
+    padding: 7px 185px 9px 17px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.weightage-bar p{
+    font-size: var(--fs-p3);
+    color: var(--clr-ft-light);
+    font-weight: var(--fw-md);
+    line-height: 16px;
+}
+
+.home-bottom {
+    row-gap: 50px;
+}
+.checkboxes {
+    display: grid;
+    gap: 39px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.meter-container {
+    padding: 50px 120px;
+}
+
+.meter-conatiner p{
+    font-size: var(--fs-p2);
+    font-weight: var(--fw-bd);
+}
+
+.bar-container {
+    padding: 32px 0 57px 0;
+}
+.meter {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    background: var(--gr-linear);
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+.img-needle {
+    position: absolute;
+    left: .5%;
+}
+.more-info {
+    display: grid;
+    place-items: center;
+}
+.more-info img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+.more-info p {
+    display: block;
+}
+.more-info .flex-row p {
+    font-size: var(--fs-p2);
+}
+
+
+
+@media (max-width: 88em) {
+    .checkboxes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 62em){
+    .checkboxes {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+    .meter-container{
+        padding: 10px;
+    }
+}
+
